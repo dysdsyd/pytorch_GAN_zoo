@@ -1,1 +1,3 @@
-{"pathDB": '/storage/pggan_dataset'}
+{"pathDB": '/storage/pggan_dataset'
+ "config": {}
+}
