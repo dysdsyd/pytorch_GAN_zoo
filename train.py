@@ -43,7 +43,7 @@ if __name__ == "__main__":
     parser.add_argument('-n', '--name', help="Model's name",
                         type=str, dest="name", default="default")
     parser.add_argument('-d', '--dir', help='Output directory',
-                        type=str, dest="dir", default='output_networks')
+                        type=str, dest="dir", default='/artifacts/output_networks')
     parser.add_argument('-c', '--config', help="Model's name",
                         type=str, dest="configPath")
     parser.add_argument('-s', '--save_iter', help="If it applies, frequence at\
@@ -63,6 +63,7 @@ if __name__ == "__main__":
     trainerModule = getTrainer(baseArgs.model_name)
 
     # Build the output durectory if necessary
+    print baseArgs.dir
     if not os.path.isdir(baseArgs.dir):
         os.mkdir(baseArgs.dir)
 
