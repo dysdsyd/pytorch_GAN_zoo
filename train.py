@@ -63,7 +63,7 @@ if __name__ == "__main__":
     trainerModule = getTrainer(baseArgs.model_name)
 
     # Build the output durectory if necessary
-    print baseArgs.dir
+    print(baseArgs.dir)
     if not os.path.isdir(baseArgs.dir):
         os.mkdir(baseArgs.dir)
 
