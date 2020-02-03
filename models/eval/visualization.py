@@ -100,6 +100,7 @@ def test(parser, visualisation=None):
 
     visualizer = GANVisualizer(
         pathModel, modelConfig, modelType, visualisation)
+    print(visualizer, pathModel, modelConfig, modelType, visualisation)
 
     if interpolationPath is None and not kwargs['random_interpolate']:
         nImages = (256 // 2**(max(scale - 2, 3))) * 8
